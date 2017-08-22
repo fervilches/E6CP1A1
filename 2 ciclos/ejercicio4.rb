@@ -9,9 +9,11 @@
 
 
 a = 5
-b = ''
-puts '</ul>'
+b = ['</ul>']
+
 a.times do
-  puts b = '<li> hola </li>'
+  b.push ('<li> hola </li>')
 end
-puts '</ul>'
+  b.push ('</ul>')
+
+puts b
